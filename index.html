@@ -350,6 +350,7 @@
 					</div>
 				</div>
 				<div class="row">
+                    <form action="https://docs.google.com/forms/d/1KKy230qoirBmx_QJGB4CnKiTp0U8rI-5-93e7PCUR5s/formResponse" id="ss-form" method="post" onsubmit="" target="_self">
 					<div class="col-md-8 col-md-offset-2">
 						<div class="cform" id="contact-form">
 							<div id="sendmessage">
@@ -358,31 +359,58 @@
 							<form action="contact/contact.php" method="post" role="form" class="contactForm">
 							  <div class="form-group">
 								<label for="name">{{_('Your Name')}}</label>
-								<input type="text" name="name" class="form-control" id="name" placeholder="{{_('Your Name')}}" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" />
+                                <input class="ss-q-short" dir="auto" id="entry_1784013246" name="entry.1784013246" required="" title="" type="text" value="" class="form-control" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" placeholder="{{_('Your Name')}}">
 								<div class="validation"></div>
 							  </div>
+                              <div class="form-group">
+                                <label for="email">{{_('Your Email')}}</label>
+                                <input class="ss-q-short" dir="auto" id="entry_1599966795" name="entry.1599966795" required="" title="" type="text" value="" class="form-control" placeholder="{{_('Your Email')}}" data-rule="email" data-msg="Please enter a valid email">
+                                <div class="validation"></div>
+                              </div>
 							  <div class="form-group">
-								<label for="email">{{_('Your Email')}}</label>
-								<input type="email" class="form-control" name="email" id="email" placeholder="{{_('Your Email')}}" data-rule="email" data-msg="Please enter a valid email" />
+								<label for="email">{{_('Your Phone')}}</label>
+                                <input class="ss-q-short" dir="auto" id="entry_406781913" name="entry.406781913" title="" type="text" value="" class="form-control" placeholder="{{_('Your Phone')}}" data-rule="email" data-msg="Please enter a valid phone">
 								<div class="validation"></div>
 							  </div>
 							  <div class="form-group">
 								<label for="subject">{{_('Subject')}}</label>
-								<input type="text" class="form-control" name="subject" id="subject" placeholder="{{_('Subject')}}" data-rule="maxlen:4" data-msg="Please enter at least 8 chars of subject" />
-								<div class="validation"></div>
+
+                                <div class="radio">
+                                  <label>
+                                      <input class="ss-q-radio" id="group_724810912_1" name="entry.724810912" required="" type="radio" value="Web"> {{ _('Web') }}
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label>
+                                    <input class="ss-q-radio" id="group_724810912_2" name="entry.724810912" required="" type="radio" value="Mobile"> {{ _('Mobile') }}
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label>
+                                    <input class="ss-q-radio" id="group_724810912_3" name="entry.724810912" required="" type="radio" value="UX"> {{ _('User eXperience') }}
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label>
+                                    <input class="ss-q-radio" id="group_724810912_4" name="entry.724810912" required="" type="radio" value="Others"> {{ _('Others') }}
+                                  </label>
+                                </div>
+
 							  </div>
 							  <div class="form-group">
 								<label for="message">{{_('Message')}}</label>
-								<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+                                <textarea class="form-control" cols="0" dir="auto" id="entry_67094755" name="entry.67094755" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
 								<div class="validation"></div>
 							  </div>
 
-							  <button type="submit" class="btn btn-theme pull-left">{{_('SEND MESSAGE')}}</button>
+                              <input name="draftResponse" type="hidden" value="[,,&quot;-5954518517918781888&quot;] "> <input name="pageHistory" type="hidden" value="0"> <input name="fbzx" type="hidden" value="-5954518517918781888">
+                              <button type="submit" id="ss-submit" class="btn btn-theme pull-left">{{_('SEND MESSAGE')}}</button>
 							</form>
 
 						</div>
 					</div>
 					<!-- ./span12 -->
+                </form>
 				</div>
 
 			</div>
