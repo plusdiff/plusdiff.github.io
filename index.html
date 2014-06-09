@@ -426,6 +426,11 @@
 
 			</div>
 		</section>
+
+        <section class="section">
+            <div class="fb-like-box" data-href="https://www.facebook.com/plusdiff" data-width="850" data-height="215" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+        </section>
+
 		<!-- map -->
 		<section id="section-map" class="clearfix">
 			<div id="map"></div>
@@ -496,5 +501,17 @@
                 var map = new google.maps.Map(mapElement, mapOptions);
             }
         </script>
+
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=398801430177372&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
 	</body>
 </html>
