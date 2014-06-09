@@ -1089,3 +1089,7 @@ Media queries
 		margin-bottom: 30px;
 	}
 }
+
+.fb-like-box .fb_iframe_widget {
+    width: 100%;
+}
