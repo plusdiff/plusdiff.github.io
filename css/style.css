@@ -681,7 +681,7 @@ nav#filter a {
 
 
 .portfolio-item:hover .portfolio-desc {
-	padding-top: 20%;
+	padding-top: 5%;
 	height: 100%;
     transition: all 200ms ease-in-out 0s;
 	opacity: 1;
@@ -694,6 +694,15 @@ nav#filter a {
 	/*text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);*/
 	text-decoration: none;
 }
+
+.portfolio-item .portfolio-desc li
+{
+	color: #FDD181;
+	list-style-type: none;
+	padding-right: 10px;
+	text-align: left;
+}
+
 .portfolio-item .portfolio-desc .folio-info {
 	top:-20px;
 	padding: 30px;
