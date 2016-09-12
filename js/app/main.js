@@ -16,7 +16,6 @@ function MainCtrl($rootScope) {
         return lang.replace("-", "_");
       } else {
         var lang_browser = getCurrentLangByBrowserSettings();
-        console.log('browser lang:', lang_browser);
         switch(lang_browser){
             case 'zh':
             case 'zh_TW':
